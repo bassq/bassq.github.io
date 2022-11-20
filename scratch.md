@@ -1,4 +1,10 @@
-# test
+# notation
+## table
+| foo | bar |
+|-----|-----|
+| hoge| fuga|
+
+## itemize
 1. item 1
     - indent 
     - 
@@ -6,6 +12,7 @@
     - [x] rice
     - [ ] salt
 
+## code
 ```sh
 #!/bin/sh
 echo hoge
