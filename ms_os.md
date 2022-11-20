@@ -18,8 +18,9 @@
 Jp  Kana Latin ;
 ```
 ### for US keyboard
-keys |   |
----  |---|
+
+|keys |   |
+|---  |---|
 Ctrl + BS	    |変換確定解除
 Ctrl + F10  	|open IME menu
 Shift + Caps	|ローマ字Caps反転
@@ -30,9 +31,10 @@ Logo + SPC  |入力言語とキーボードレイアウトを切り替え
 
 keyboard:	US:101/104	OADG(JP):109
 
-## OS tune up cmds;		`Logo+R> `
-cmd |   |
-----|---|
+## OS tune up cmds;		`Logo+R>`
+
+|cmd |   |
+|----|---|
 `msconfig`        |setup Boot/Services/Sartup
 `taskmgr`         |same as Ctrl+Shift+ESC
 `control update`  | windows update
