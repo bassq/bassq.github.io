@@ -1,3 +1,3 @@
 hello. まいど。
 
-[./scratch.md]
+[./scratch.md](scratch.md)
