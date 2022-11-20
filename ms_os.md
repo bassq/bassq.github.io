@@ -23,7 +23,7 @@ keys |   |
 Ctrl + BS	    |変換確定解除
 Ctrl + F10  	|open IME menu
 Shift + Caps	|ローマ字Caps反転
-Alt + `(~)	  |[半角/全角] in US keyboard
+Alt + ``(~)	  |[半角/全角] in US keyboard
 Shift + Alt	|入力言語の入れ替え
 Shift + Ctrl|キーボードレイアウトの切り替え
 Logo + SPC  |入力言語とキーボードレイアウトを切り替え
