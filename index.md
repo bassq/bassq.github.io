@@ -1,0 +1,3 @@
+hello. まいど。
+
+[./scratch.md]
