@@ -1,3 +1,4 @@
 hello. まいど。
 
-- [MS OS](ms_os.md)
+- [Microsoft OS](ms_os.md)
+- [HP Calicurator](hp.calc.md)

@@ -1,33 +1,32 @@
 # MS windows OS
+[index.md](index.md)
 
-## MS-IME 
-### keybind with ctrl
+## Japanese Inputting 
+### MS-IME with ctrl
 ```
               f10  f5  f6  f7  f8  f9
-　  　  ↑      英   部  か  カ  半  全英
+       上      英   部  か  カ  半  全英
        E       T   Y   U   I   O   P
-頭  ←   → 　末  ⌦ 　 ⌫       縮  伸
- A  S   D   F   G   H   J   K   L
-　　  ↓               ↓   ⏎
-　　  X              N   M
+頭  左  右  末   #>  <#      縮  伸
+A   S   D   F   G   H   J   K   L
+      下             ↓   ⏎
+      X              N   M
 ```
-#### macOS keybind
-```
-かな カナ 全英 半角
- J   K   L   ;
-Jp  Kana Latin ;
-```
+#### macOS with ctrl
+	かな カナ 全英 半角
+	 J   K   L   ;
+	 J  Kana Latin ;
 ### for US keyboard
 
 |keys |   |
 |---  |---|
-Ctrl + BS	    |変換確定解除
-Ctrl + F10  	|open IME menu
-Shift + Caps	|ローマ字Caps反転
-Alt + `(~)	  |[半角/全角] in US keyboard
-Shift + Alt	|入力言語の入れ替え
-Shift + Ctrl|キーボードレイアウトの切り替え
-Logo + SPC  |入力言語とキーボードレイアウトを切り替え
+Ctrl + BS   | 変換確定解除
+Ctrl + F10 	| open IME menu
+Shft + Caps	| toggle Roman/Caps
+Alt  + `/~ 	| 半/全 in US kbd
+Shft + Alt	| sw lang
+Shft + Ctrl	| sw kbd layout
+Logo + SPC  | sw lang & kbd layout
 
 keyboard:	US:101/104	OADG(JP):109
 
@@ -36,8 +35,8 @@ keyboard:	US:101/104	OADG(JP):109
 
 |cmd |   |
 |----|---|
-`msconfig`        | config Boot / Services / Sartup
-`taskmgr`         | same as `Ctrl + Shift + ESC`
+`msconfig`        | Boot, Sartup, Services
+`taskmgr`         | `Ctrl + Shift + ESC`
 `control update`  | windows update
 `shutdown /r /t 0`| reboot now
 `shutdown /l`     | sign-out / log off
@@ -46,12 +45,9 @@ keyboard:	US:101/104	OADG(JP):109
 `dxdiag`          | Direct X 診断ツール
 
 ### %systemroot%\System32\
-```
-systeminfo
-driverquery
-ver
-```
+	systeminfo
+	driverquery
+	ver
 
 ### additional MS tool online
-MS PC Manager
-https://pcmanager.microsoft.com/en
+[MS PC Manager](https://pcmanager.microsoft.com/en)
