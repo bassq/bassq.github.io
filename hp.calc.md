@@ -5,44 +5,48 @@
 c.f. emulator Free42
 
 ### Calc Keys
-STO / RCL reg		# store, recall	 value
-@Clear>CLx			# Clear memory segments
-@Print>PON / POFF	# printer on
+	STO/RCL reg	# STOre, ReCaLl
+	@Clear>CLx	# Clear memory sgmnt
+	@Print>PON/POFF	# printer on/off
 
 ### input Program AREA
-@GTO . . @PRGM @PGM.FCN >LBL AREA [ENTER]
-@^2 @pi x [EXIT]
+	@GTO ..
+	@PRGM
+	@PGM.FCN 
+	LBL AREA [ENTER]
+	@^2 @pi x [EXIT]
 
 ### Call Programs
-XEQ "prog"	# eXEC program, and RETurn
-@Custom	# Open Customisable Menu of Progs
-@Assign <Prog> To <Menu>	# set Custom Menu
+	XEQ "prog"	# eXEC program, and
+	@PGM.FCN>RETurn
+	@Custom	# Open Customisable Menu of Progs
+	@Assign _Prog_ To _Menu_	# set Custom Menu
 
 ### Debug
-@PRGM		# toggle; normal / program mode
-R/S			# toggle; Run / Stop
-@Pgm.Fcn▼RTN	# Reset PCounter @normal mode
-@GTO .n			# goto line n
-@GTO ..			# new prog space
-@GTO .[Enter] LBL [Enter]	# goto LBL
-▲ / @BST	# menu select / Back STep NOP
-▼ / @SST	# <Press: Show line -> STep
+	@PRGM		# toggle; normal / program mode
+	R/S			# toggle; Run / Stop
+	@Pgm.Fcn▼RTN	# Reset PCounter @normal mode
+	@GTO .n			# goto line n
+	@GTO ..			# new prog space
+	@GTO .[Enter] LBL [Enter]	# goto LBL
+	▲ / @BST	# menu select / Back STep NOP
+	▼ / @SST	# Press: Show line ; STep
 
 ### Jump; Do if True
-@Pgm.Fcn▼X?0	X=0?, X<0?, ...
-@Pgm.Fcn▼X?Y	X=Y?, X<Y?, ...
-FS? / FC? <num>	# Flag setted / cleared
-FS?C / FC?C		# clearing the flag
-# flag 36-80 are System flag, others are user's
+	@Pgm.Fcn▼X?0	X=0?, X<0?, ...
+	@Pgm.Fcn▼X?Y	X=Y?, X<Y?, ...
+	FS? / FC? *num*	# Flag setted / cleared
+	FS?C / FC?C		# clearing the flag
+	# flag 36-80 are System flag, others are user's
 
 ### Menu
-@Pgm.Fcn▲KEYG / KEYX	# KEY nn GTO / EXQ
-@Pgm.Fcn▲MENU
-R/S		# STOP
+	@Pgm.Fcn▲KEYG / KEYX	# KEY nn GTO / EXQ
+	@Pgm.Fcn▲MENU
+	R/S		# STOP
 
 ### Misc
-PSE: PauSE 1 second
-BEEP	/ TONE nn
+	PSE: PauSE 1 second
+	BEEP	/ TONE nn
 
 ### Prog: Timer
 	LBL "TMR"
