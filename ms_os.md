@@ -1,13 +1,12 @@
 # MS windows OS
-[index.md](index.md)
 
 ## Japanese Inputting 
 ### MS-IME with ctrl
 ```
-              f10  f5  f6  f7  f8  f9
-       上      英   部  か  カ  半  全英
+                    f5  f6  f7  f8  f9  f10 英
+       上      英  部  か  カ  半  全英 
        E       T   Y   U   I   O   P
-頭  左  右  末   #>  <#      縮  伸
+頭  左  右  末  #>  <#      縮  伸
 A   S   D   F   G   H   J   K   L
       下             ↓   ⏎
       X              N   M
@@ -16,7 +15,8 @@ A   S   D   F   G   H   J   K   L
 	かな カナ 全英 半角
 	 J   K   L   ;
 	 J  Kana Latin ;
-### for US keyboard
+
+### MS-IME on US keyboard
 
 |keys |   |
 |---  |---|

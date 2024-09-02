@@ -20,15 +20,15 @@ c.f. emulator Free42
 	XEQ "prog"	# eXEC program, and
 	@PGM.FCN>RETurn
 	@Custom	# Open Customisable Menu of Progs
-	@Assign _Prog_ To _Menu_	# set Custom Menu
+	@Assign `Prog` To `Menu`	# set Custom Menu
 
 ### Debug
 	@PRGM		# toggle; normal / program mode
-	R/S			# toggle; Run / Stop
+	R/S		# toggle; Run / Stop
 	@Pgm.Fcn▼RTN	# Reset PCounter @normal mode
-	@GTO .n			# goto line n
-	@GTO ..			# new prog space
-	@GTO .[Enter] LBL [Enter]	# goto LBL
+	@GTO .n		# goto line n
+	@GTO ..		# new prog space
+	@GTO .[Enter]LBL[Enter]	# goto LBL
 	▲ / @BST	# menu select / Back STep NOP
 	▼ / @SST	# Press: Show line ; STep
 
@@ -36,7 +36,7 @@ c.f. emulator Free42
 	@Pgm.Fcn▼X?0	X=0?, X<0?, ...
 	@Pgm.Fcn▼X?Y	X=Y?, X<Y?, ...
 	FS? / FC? *num*	# Flag setted / cleared
-	FS?C / FC?C		# clearing the flag
+	FS?C / FC?C	# clearing the flag
 	# flag 36-80 are System flag, others are user's
 
 ### Menu
@@ -71,16 +71,17 @@ c.f. emulator Free42
 	LBL 03	1925	GTO 11
 	LBL 04	1988	GTO 11
 	LBL 05	2018	GTO 11
-	LBL 11	X<Y?	+/-		+
+	LBL 11	X<Y?	+/-
+	+
 	END
 
 ### Prog: Octarv
 	LBL "OCT"
 	1.00801	STO "C"		# Begin.EndSt; "C"ounter
 	LBL 01	TONE IND "C"	ISG "C"	GTO 01
-	8		STO "C"		# simply set num of times & DSE
+	8	STO "C"		# simply set num of times & DSE
 	LBL 02	TONE IND "C"	DSE "C"	GTO 02
 	BEEP	END
-	# ISG:	Increment Skip if Greater than
-	# DSE:	Decriment Skip if less than or Equal
+- ISG:	Increment Skip if Greater than
+- DSE:	Decriment Skip if less than or Equal
 	
